@@ -1,0 +1,28 @@
+{% extends "base_main.html" %}
+
+{% block con %}
+     {% for article in article_obj %}
+            {% csrf_token %}
+            <div class="article">
+                <div class="dayTitle">
+                    <span>{{ article.create_time|date:"Y年m月d日 " }}</span>
+                </div>
+                <div class="postTitle">
+                    <a href="/{{ username }}/articles/{{ article.nid }}">{{ article.title }}</a></div>
+
+                <div class="postTon">
+                    <div class="desc_content">{{ article.desc }}
+                        <a class="desc_a" href="/{{ username }}/articles/{{ article.nid }}" style="color: black">阅读全文</a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="postDesc">
+                    posted @ {{ article.create_time|date:"Y-m-d H:i" }} {{ article.user__username }}
+                    点赞({{ article.up_count }})
+                    评论{{ article.comment_count }}
+                    <a rel="nofollow" class="editor">编辑</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        {% endfor %}
+{% endblock %}
+

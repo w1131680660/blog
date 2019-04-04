@@ -1,0 +1,70 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:url("/static/register/img/f261d4a76d7e0a4b59335e85525c9337.jpg");
+    font-family: Helvetica, Arial, 微软雅黑, 华文黑体, 华文宋体;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.loginbox{
+    width: 20%;
+    height: 310px;
+    margin: 100px auto 0;
+    padding: 60px 70px;
+    background: url("/static/register/img/loginboxbg.png") repeat;
+
+}
+
+.loginbox .loginlogo .title{
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.loginbox .input{
+    margin-bottom: 18px;
+}
+
+.loginbox .logininput{
+    width: 300px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 2px;
+    border: 1px solid #4688f1;
+    font-size: 15px;
+}
+
+.loginbox .register{
+
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.loginbox .submit{
+    background-color: greenyellow;
+    border: 0;
+    color: white;
+}
+
+
+.show{
+    display: block;
+    opacity: 1;
+}
+
+.error{
+    font-size: 12px;
+    color: red;
+    float: right;
+    overflow: hidden;
+    margin-bottom: 18px;
+    margin-right: -20px;
+}

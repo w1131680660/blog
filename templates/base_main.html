@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人站点</title>
+    <link type="text/css" rel="stylesheet" href="/static/main/css/main.css">
+</head>
+<body>
+<div>{% include "base_top.html" %}</div>
+
+{# --end:header:头部 #}
+
+<div id="main">
+    <div class="left-content">
+        <div class="newItem">
+            <h3 class="catListTitle">公告</h3>
+            <div class="blog-news">
+                <ul id="profile_block">
+                    <li>昵称:
+                        <a>{{ blog_name.blog__title }}</a></li>
+                    <li>博客龄:
+                        <a>2个月</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="newItem">
+            <h3 class="catListTitle">随笔分类</h3>
+            <ul>
+                 {% for cat in category %}
+                    <li>
+                        <a href="/{{ username }}/category/{{ cat.title }}">{{ cat.title }} ({{ cat.num }})</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="newItem">
+            <h3 class="catListTitle">我的标签</h3>
+            <ul>
+                {% for tag_msg in tag_obj %}
+                    <li>
+                        <a href="/{{ username }}/tag/{{ tag_msg.title }}">{{ tag_msg.title }} ({{ tag_msg.num }})</a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+        </div>
+        <div class="newItem">
+            <h3 class="catListTitle">随笔时间</h3>
+            <ul>
+                {% for tag_msg in article_time_obj %}
+                    <li>
+                        <a href="/{{ username }}/archive/{{ tag_msg.create_time }}">{{ tag_msg.create_time }} ({{ tag_msg.num }})</a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+        </div>
+        <div class="newItem">
+            <h3 class="catListTitle">最新评论</h3>
+        </div>
+
+    </div>
+    <div class="right-content">
+        {% block con %}
+
+        {% endblock %}
+    </div>
+</div>
+
+{# --end :main #}
+
+</body>
+
+{% block up_down %}
+{% endblock %}
+</html>

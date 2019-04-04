@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: wheat;
+}
+.navbar-fixed-top{
+
+}
+
+.navbar-left a{
+    font-size: 25px;
+    line-height: 30px;
+    overflow: hidden;
+    clear: both;
+}
+.nav-box{
+    background-color: #283e5c;
+    color: #fff;
+    line-height: 50px;
+    height: 50px;
+}
+
+.container{
+    width: 1140px;
+    margin: auto;
+}
+
+.navbar-left{
+
+    float: left;
+}
+.navbar-right{
+    display: inline;
+    float: right;
+}
+
+.nav-box .navbar-right a{
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.body-box{
+    margin-top: 70px;
+}
+
+.body-container{
+    width: 870px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.body-container hr{
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+
+.from-group{
+    margin-top: 20px;
+}
+.form-control{
+    height: 30px;
+    border-radius: 2px;
+    padding: 0 6px;
+    color: #000000;
+    font-size: 12px;
+    width: 400px;
+    border: 1px solid #cccccc;
+}
+
+.form-wrap .form-horizontal{
+    float: left;
+}
+
+.from-group label{
+    display: block;
+    padding-top: initial;
+    line-height: 30px;
+    width: 70px;
+    float: left;
+
+}
+.img{
+    float: right;
+}
+.img-xs{
+    width: 275px;
+    height: 300px;
+    border-radius: 2px;
+
+}
+
+.btn{
+    display: block;
+    border-radius: 3px;
+    color: #ffffff;
+    background: #4688f1;
+    border: 1px solid #3a6faf;
+
+
+}
+
+.from-group .ladda-label{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    width: 90px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.error{
+    margin-top: 4px;
+    font-size: 12px;
+    color: red;
+    line-height: 10px;
+    float: right;
+    clear: both;
+}
+
+.had_error{
+    border: 1px solid red;
+}

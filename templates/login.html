@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>博客</title>
+    <link rel="stylesheet" type="text/css" href="../static/login/css/login.css">
+    <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <!-- 引入封装了failback的接口--initGeetest -->
+    <script src="http://static.geetest.com/static/tools/gt.js"></script>
+</head>
+<body>
+
+<div class="loginbox">
+    <div class="loginlogo">
+        <div class="title">账户密码登录</div>
+    </div>
+
+        <div class="input">
+            <input placeholder="&nbsp;&nbsp;&nbsp;请输入用户名" class="logininput" id="username1">
+        </div>
+        <div class="input">
+            <input placeholder="&nbsp;&nbsp;&nbsp;请输入密码" class="logininput" id="password1" type="password">
+            <div class="error">
+                <span id="error"></span>
+            </div>
+        </div>
+        <div class="input">
+            <a href="" class="register">忘记密码?</a>
+            <a href="register" target="_blank" class="register" style="float: right">没有账号？立即注册</a>
+        </div>
+        <div class="input">
+            <input type="submit" value="登&nbsp;&nbsp;&nbsp;录" class="logininput submit" id="popup-submit"
+                   style="cursor: pointer">
+        </div>
+        <div class="input">
+            <div id="popup-captcha"></div>
+        </div>
+
+
+</div>
+
+</body>
+<script src="../static/login/js/login.js"></script>
+</html>

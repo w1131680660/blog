@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+a {
+    list-style: none;
+    text-decoration: none;
+
+}
+body{
+    color: #7d8b8d;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+#blogTitle{
+    background: url("https://www.cnblogs.com/skins/CodingLife/images/title-yellow.png");
+    height: 302px;
+    background-color: #4688f1;
+}
+
+#blogTitle h1{
+    width: 310px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    position: relative;
+    padding-left: 90px;
+    font-weight: normal;
+}
+
+#blogTitle h2{
+    width: 550px;
+    position: relative;
+    height: 75px;
+    padding-left: 90px;
+    font-size: 18px;
+    color: white;
+}
+
+a {
+    list-style: none;
+    cursor: pointer;
+}
+
+#navigator{
+    height: 60px;
+    background-color:#4688f1;
+}
+.navlist li{
+    float: left;
+    height:60px;
+    line-height: 60px;
+
+    font-size: 20px;
+    margin-left: 20px;
+    color: wheat;
+}
+.navigator{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.left-content{
+    width: 20%;
+    margin-right: 20px;
+    margin-left: 30px;
+    float: left;
+    overflow: visible;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+#main{
+    margin-top: 20px;
+}
+
+.article{
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+}
+.right-content{
+
+    float: left;
+    background: none;
+    text-overflow: ellipsis;
+    width:65%;
+    word-break: break-all;
+}
+
+.dayTitle{
+    margin-top: 15px;
+    margin-left: 15px;
+    color: #ffffff;
+    background-color: #4688f1;
+    padding: 3px 6px;
+    font-size: 12px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.postTitle{
+    margin-top: 15px;
+    padding-left: 15px;
+    font-size: 21px;
+    line-height: 1.5em;
+    float: left;
+    clear: right;
+}
+
+.postTon{
+    padding: 15px ;
+    clear: both;
+}
+
+
+.desc_content{
+    font-size: 14px;
+    color: #000000;
+    line-height: 200%;
+
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.desc_a{
+    color: orangered;
+    text-decoration: none;
+    padding-left: 2px;
+}
+
+.clear{
+    clear: both;
+}
+
+.postDesc{
+    clear: both;
+    color: #bcbcbc;
+    float: none;
+    text-align: left;
+    line-height: 200%;
+    font-size: 12px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.editor{
+    color: #999999;
+}
+
+.catListTitle{
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #169fe6;
+    color: #ffffff;
+    font-weight: normal;
+    border: 1px solid #169fe6;
+}
+
+.newItem{
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
+}
+.blog-news{
+    margin-top: 20px;
+    padding: 10px;
+}
+.blog-news a{
+    color: #9fa4a4;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.newItem ul li {
+    line-height: 12px;
+    border-bottom: 1px solid #e9e9e9;
+    padding: 15px 10px 15px 20px;
+    font-size: 12px;
+    color: #000000;
+}
+
+.newItem ul li a {
+    color: black;
+}
+
+
+.newItem ul {
+    word-break: break-all;
+    list-style: none;
+}
+
+.article .topcis{
+    padding: 20px;
+}
+.article .tag{
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.article .tag span {
+  color: #333333;
+}
+
+.article .postBody{
+    margin-top: 10px;
+    color: black;
+}
+
+.article .cnblogs_post_body{
+    border: 1px solid #cccccc;
+    padding: 5px;
+}
+
+.article #author_profile img{
+    width: 50px;
+    height: 53px;
+}
+
+.author_avatar{
+    vertical-align: top;
+    float: left;
+    margin-right: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    border: 0;
+}
+
+.author_profile_inf{
+    float: left;
+    line-height: 18px;
+}
+#dic_digg{
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    font-size: 13px;
+    width: 130px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.digght, .buryit{
+    width: 46px;
+    height: 52px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 2px;
+    padding-top: 6px;
+}
+
+.burynum, .diggum{
+    font-size: 14px;
+    color: #3a6faf;
+    font-family: Verdana;
+    padding-right: 3px;
+}
+
+.diggword{
+    margin-top: 5px;
+    margin-left: 0;
+    font-size: 12px;
+    color: red;
+}
+
+#author_profile{
+    padding-top: 20px;
+}
+
+#commentNav{
+    margin: 15px;
+    text-align: right;
+}
+
+#commentNav a{
+    padding-left: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+
+#comment_content{
+    border: 1px solid #dedede;
+    padding: 20px;
+
+}
+
+.comment_from .blog_comment_from p .author{
+    background-repeat:no-repeat ;
+    border: 1px solid #cccccc;
+    padding: 4px 4px 4px 30px;
+    width: 300px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+.commentbox_title{
+    width: 450px;
+}
+
+.commentbox_title_left{
+    float: left;
+}
+
+div .comment_textarea{
+    width: 450px;
+    height: 300px;
+    font-size: 13px;
+    border: 1px solid #cccccc;
+}
+
+.comment_btn{
+    height: 26px;
+    width: 68px;
+    margin-right: 30px;
+    padding: 0;
+    line-height: 22px;
+}
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+#commment_opt{
+    padding-top: 15px;
+}
+
+.comment_list{
+    border: 1px #dedede;
+    padding-bottom: 20px;
+}
+
+.feedbackItem{
+    padding: 8px;
+
+    border: 1px  dotted #cccccc;
+}
+
+.feedbackListSubtitle .layer , .comment_actions{
+    color: #399ab2;
+    text-decoration: none;
+}
+
+div .feedbackCon{
+    color: #888;
+    font-size: 13px;
+    line-height: 125%;
+    padding: 10px 20px 10px 20px;
+}
+
+.comment_actions{
+    float: right;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.well{
+    margin-top: 5px;
+    margin-left: 15px;
+    width: 800px;
+    padding: 8px;
+    background-color: azure;
+    border-radius: 2px;
+}
+
+
+.nav-right{
+    float: right;
+    margin-right: 40px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    margin-left: 20px;
+   
+}
+
+.nav-right a , .navlist a{
+    padding: 2px 10px 0px 10px;
+    text-decoration: none;
+    color: wheat;
+}
+
+.remove{
+    display: none;
+}

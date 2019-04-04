@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" type="text/css" href="../static/register/css/register_css.css">
+</head>
+<body>
+<div class="navbar-fixed-top nav-box navbar-default">
+    <div class="container">
+        <div class="navbar-left">
+            <a href="/">博 &nbsp;客 &nbsp;园</a>
+        </div>
+        <div class="navbar-right">
+            <a href="/">首页</a>
+            <a href="/login">登录</a>
+            <a href="">注册</a>
+        </div>
+    </div>
+</div>
+<div class="body-container body-box">
+        <div class="hidden-xs">
+            <h3>注册新用户</h3>
+            <hr class="head-hr">
+        </div>
+        <div class="form-wrap">
+            <form class="form-horizontal" method="post" enctype="multipart/form-data" target="_blank">
+                <div class="from-group">
+                    <label class="control_label" id="user">用户名</label>
+                    {{ form.user }}
+                    <div class="error"></div>
+                </div>
+                <div class="from-group">
+                      <label class="control_label" id="pwd">密码</label>
+                     {{ form.pwd }}
+                     <div class="error"></div>
+                </div>
+                <div class="from-group">
+                    <label class="control_label" id="re_pwd">确认密码</label>
+                    {{ form.re_pwd }}
+                    <div class="error"></div>
+                </div>
+                <div class="from-group">
+                    <label class="control_label" id="email">邮箱</label>
+                    {{ form.email }}
+                    <div class="error"></div>
+                </div>
+                <div class="from-group">
+                    <label class="control_label" id="telephone">电话</label>
+                    {{ form.telephone }}
+                    <div class="error"></div>
+                </div>
+
+                <div class="from-group">
+                     <label for="avatar">
+                        头像
+                         <img id="avatar_img" src="/media/avatars/default.jpg" style="width: 60px;height: 60px;margin-left: 70px" alt="" >
+                     </label>
+                     <input type="file" id="avatar" style="display: none">
+                 </div>
+                <div class="from-group" style="clear: both">
+                     <button id="submitBtn"  type="button" class="btn">
+                        <span class="ladda-label">注册</span>
+                     </button>
+                 </div>
+            </form>
+            <div class="img">
+                <img class="img-xs" src="../static/register/img/aec379310a55b3199ba2365c49a98226cffc17bb.jpg">
+            </div>
+        </div>
+    </div>‘
+</body>
+<script src="../static/jquery-3.3.1.js"></script>
+<script src="../static/register/js/register_js.js"></script>
+</html>

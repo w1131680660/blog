@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客后台管理-博客园</title>
+    <link rel="stylesheet" type="text/css" href="/static/main/css/bootstarp.css">
+    <link rel="stylesheet" type="text/css" href="/static/main/css/backend.css">
+
+</head>
+<body>
+<div class="header">
+    <div class="header_top">
+        <div class="left_header">
+            <a>网站首页</a>
+            <span>|</span>
+            <a>个人站点</a>
+        </div>
+        <div class="right_header">
+            <a>退出</a>
+            <span>|</span>
+            <a>天梦琉璃</a>
+        </div>
+    </div>
+</div>
+<div class="body_content">
+    <div class="NavleftCell">
+        <div class="classfiy">操作</div>
+        <ul>
+            <li><a href="/add_article/">添加新文章</a></li>
+        </ul>
+
+        <div class="classfiy">分类</div>
+        <ul>
+            <li>编辑分类</li>
+            <li>新建分类</li>
+
+        </ul>
+        <div class="classfiy">标签</div>
+        <ul>
+            <li>新建标签</li>
+            <li>编辑标签</li>
+        </ul>
+
+    </div>
+    <div class="body">
+
+        <div id="content_area">
+            <div id="post_list">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+                    <tr>
+                        <th class="post_title">标题</th>
+                        <th >评论数</th>
+                        <th>操作</th>
+                        <th>操作</th>
+                    </tr>
+
+                    {% for article in article_list %}
+                        <tr>
+                            <th class="post_title">{{ article.title }}</th>
+                            <th>{{ article.comment_count }}</th>
+                            <th><a href="">编辑</a></th>
+                            <th>
+                                <a href="/delete/{{ article.nid }}" >删除</a></th>
+                        </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
